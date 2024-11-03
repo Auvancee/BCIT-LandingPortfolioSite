@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety ◉ United Arab Emirates</title>
+
+    <!--CSS Files-->
+    <!-- <link rel="stylesheet" href="#> -->
+    <link rel="stylesheet" href="2-safety.css">
+    <link rel="stylesheet" href="0-global.css">
+    <link rel="stylesheet" href="0-normalize-fwd.css">
+
+    <!--All Favicon Types & Settings-->
+    <link rel="icon" type="image/png" href="0-favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="0-favicon/favicon.svg" />
+    <link rel="shortcut icon" href="0-favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="0-favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="U.A.E" />
+    <link rel="manifest" href="0-favicon/site.webmanifest" />
+
+    <!--Lenis Scroll JS Library-->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.14/dist/lenis.css">
+    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script> 
+
+
+    <!--Javascript Files-->
+    <script src="0-global.js"></script>
+</head>
+    <body>
+
+         <!-- [0] Preloader  -->
+
+
+         <!-- [1] Header & Navigation (GLOBAL)  -->
+        <header>
+            <nav>
+                <img src="0-favicon/favicon-96x96.png" class="logo-image" alt="uae-flag-logo">
+                <ul>
+                    <a href="#maincontent" id="skip_to_main" tabindex="0">(skip to main content)</a>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="2-safety.html">Safety</a></li>
+                    <li><a href="3-cuisine.html">Cuisine</a></li>
+                    <li><a href="4-credits.html">Credits</a></li>
+                </ul>
+                
+
+                <!-- [1.1] Hamburger Menu  -->
+                <!-- Codepen Link: https://codepen.io/ainalem/pen/LJYRxz -->
+                <svg id="hamburger-menu" class="ham hamRotate ham8" viewBox="0 0 100 100" width="60" onclick="this.classList.toggle('active')">
+                    <path class="line top" d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                    <path class="line middle" d="m 30,50 h 40" />
+                    <path class="line bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+                </svg> 
+            </nav>
+
+            <!-- [1.2] Overlay (w/ Hamburger Onclick)  -->
+            <div class="overlay" id="menuOverlay">
+                <div class="overlay-content">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="2-safety.html">Safety</a></li>
+                    <li><a href="3-cuisine.html">Cuisine</a></li>
+                    <li><a href="4-credits.html">Credits</a></li>
+                  </ul>
+                </div>
+            </div>
+
+        </header>
+
+
+        <!-- [2] Main With Contents  -->
+        <main>
+
+            <!-- [2.1] Safety Image & Title -->
+            <section class="hero" id="hero">
+                <h1 class="hero-title" tabindex="0">U.A.E Safety</h1>
+                <img src="0-images/Safety-AbuDhabi.png" alt="emergency-response-background">
+            </section>
+            
+            <!-- [2.2] Safety Section -->
+            <section class="safety-foreground" id="foreground">
+                <div class="safety-intro">
+                    <img src="0-images/Eagle.png" alt="uae-falcon">
+                </div>
+                <div class="safety-content">
+                    <h2 class="safety-title" tabindex="0">United Arab Emirate's Safety</h2>
+                    <p tabindex="0">The United Arab Emirates (UAE) has elaborated its own philosophy of security. Driven by emergencies & 
+                        increasing risks, both in the region and globally, authorities developed a sense of anticipation 
+                        as well as agility to react to new threats.
+                    </p>
+                </div>
+            </section>
+
+            <!-- [2.3] Safety Highlights -->
+            <section class="safety-highlights" id="safety">
+                <h2 class="safety-high-title" tabindex="0">Famous Defense Districts</h2>
+                    <article class="def-image-container">
+                        <div class="def-image">
+                            <img src="0-images/AbuDhabiPolice.png" alt="AbuDhabi-Police-Logo" tabindex="0">
+                        </div>
+                        <div class="def-image">
+                            <img src="0-images/DubaiPolice.png" alt="Dubai-Police-Logo" tabindex="0">
+                        </div>
+                        <div class="def-image">
+                            <img src="0-images/MinistryofDefence.png" alt="UAE-MinistryofDefence" tabindex="0">
+                        </div>
+                    </article>
+                <div class="safety-highlight-content">
+                    <p tabindex="0">These are some of the widely known districts within the United Arab Emirates, although not limited.
+                        Other districts include; Sharjah Police, Ajman Police, Fujairah Police & more sub districts across the emirates.
+                    </p>
+                </div>
+            </section>
+
+            <!-- [2.4] Safety Highlights -->
+
+            <section class="safety-video" id="safe-vid">
+                <div class="video-content">
+                    <h2 class="video-title" tabindex="0">Short Action Film</h2>
+                    <p tabindex="0">This video below actively shows the clear safety protocols
+                        the U.A.E take to hunt down suspects and apprehend!
+                    </p>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/FGqS5OeNJyg?si=Lj2lmTWRKMpthOPJ" title="YouTube video player" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+
+
+
+
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <div class="menu-footer">
+                    <h4 class="footer-subtitle-1">Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="2-safety.html">Safety</a></li>
+                        <li><a href="3-cuisine.html">Cuisine</a></li>
+                        <li><a href="4-credits.html">Credits</a></li>
+                    </ul>
+                </div>
+                <div class="social-footer">
+                    <h4 class="footer-subtitle-2">Other Links</h4>
+                    <ul>
+                        <li><a href="https://aumar.xyz/">Portfolio</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Distribution Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </footer>
+
+    </body>
+</html>

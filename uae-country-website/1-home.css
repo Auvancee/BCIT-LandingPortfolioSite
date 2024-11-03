@@ -1,0 +1,323 @@
+
+
+body {
+    background-color: rgb(212, 212, 212);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    
+}
+
+a {
+    -webkit-tap-highlight-color:transparent;
+} 
+
+/* ⇣⇣ MOBILE SETTINGS ⇣⇣ */
+
+/* [1] Header & Navigation - GLOBAL CSS */
+/* [2] Hamburger Menu & Overlay - GLOBAL CSS*/
+/* [3] Image Hero & Title - GLOBAL CSS*/
+
+
+/* [4] About Foreground */
+.about-foreground {
+    display: flex;
+    /* margin: -20px; */
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+
+.about-content-intro h2, .about-content {
+    text-align: center;
+}
+
+.about-content-intro h2 {
+    margin-top: 10%;
+
+}
+
+.about-content {
+    max-width: 600px;
+    font-family: 'NonB-Extend-SemiBold';
+    font-size: 1rem;
+}
+
+.about-content-intro img {
+    height: auto;
+    width: 100%;
+    border-color: rgb(116, 116, 116);
+    border-style:groove;
+    border-width: 5px;
+    scale: 0.8;
+   
+}
+/* [5] Emirate Images */
+.emirate-title {
+    font-family: 'NonB-Extend-SemiBold';
+    text-transform: uppercase;
+}
+
+.emirate-text {
+    font-family: 'NonB-Extend-Thin';
+    letter-spacing: 1px;
+}
+
+/* [6] About Highlights */
+.about-highlights {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.about-content p {
+    margin-bottom: 15%;
+}
+
+.highlight-about {
+    text-align: center;
+    padding: 10px;
+}
+
+.highlight-about h2 {
+    margin-top: 15%;
+}
+
+.highlight-about p {
+    max-width: 600px;
+    font-family: 'NonB-Extend-SemiBold';
+        font-size: 1rem;
+}
+
+/* [7] FoundingFather */
+.history-title {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.foundingFather {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 10%;
+}
+
+.founderTitle h2, h3{
+    text-align: center;
+}
+
+.founderTitle h2, h3 {
+    font-family: 'NonB-Extend-SemiBold';
+    font-size: 1rem;
+}
+
+.founderTitle h3 {
+    font-family: 'NonB-Extend-Thin';
+    letter-spacing: 1px;
+}
+
+.founderContent p {
+    font-family: 'NonB-Extend-SemiBold';
+    font-size: 1rem;
+}
+
+.founderContent blockquote {
+    font-family: 'NonB-Extend-Thin';
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 10em) {
+
+    /* [5] Emirate List */
+    .emirate-images {
+        display: grid;
+        grid-template-columns: 1;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .emirate {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 16px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* [6] FoundingFather */
+    .founderContent p {
+        font-family: 'NonB-Extend-SemiBold';
+        font-size: 1.3rem;
+    }
+
+    .founderContent blockquote {
+        font-family: 'NonB-Extend-Thin';
+        letter-spacing: 1px;
+        font-size: 1.2rem;
+    }
+    
+
+    
+}
+
+
+
+
+@media (min-width: 30em) {
+    
+    /* [5] Emirate List */
+    .emirate-images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
+        gap: 15px;
+        padding: 15px;
+    }   
+
+    .emirate {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 16px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+
+    /* [6] FoundingFather */
+    .founderTitle img {
+        max-width: 100%;
+    }
+
+    .founderContent p {
+        font-family: 'NonB-Extend-SemiBold';
+        font-size: 1.3rem;
+    }
+
+    .founderContent blockquote {
+        font-family: 'NonB-Extend-Thin';
+        letter-spacing: 1px;
+        font-size: 1.2rem;
+    }
+
+
+
+}
+
+
+
+
+
+
+@media (min-width: 55em) { /* ⇣⇣ DESKTOP SETTINGS ⇣⇣ */
+
+    /* [1] Header & Navigation - GLOBAL CSS */
+    /* [2] Hamburger Menu & Overlay - GLOBAL CSS*/
+    /* [3] Image Hero & Title - GLOBAL CSS*/
+    
+    /* [4] About Foreground */
+    .about-content {
+        max-width: 1000px;
+        font-family: 'NonB-Extend-SemiBold';
+        font-size: 2rem;
+    }
+
+    .highlight-about p {
+        max-width: 1000px;
+        font-family: 'NonB-Extend-SemiBold';
+        font-size: 2rem;
+    }
+
+    /* [5] Emirate List */
+    .emirate-images {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 20px;
+        justify-items: center;
+    }
+
+    .emirate {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 16px;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+
+    /* [6] FoundingFather */
+    .foundingFather {
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        align-items: center;
+        gap: 20px;
+        max-width: 1300px;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+
+    .founderContent {
+        text-align: left;
+    }
+
+    .founderTitle img {
+        max-width: 600px;
+    }
+
+    .founderContent p {
+        font-family: 'NonB-Extend-SemiBold';
+        font-size: 1.5rem;
+    }
+
+    .founderContent blockquote {
+        font-family: 'NonB-Extend-Thin';
+        letter-spacing: 1px;
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (min-width: 70em) {
+    /* [4] About Foreground */
+    .about-content-intro h2, .highlight-about h2, .history-title {
+        font-family: 'Overused-Grotesk-Bold';
+        text-transform: uppercase;
+        font-size: 3rem;
+    }
+    /* [6] FoundingFather */
+    .founderContent p {
+        font-family: 'NonB-Extend-SemiBold';
+        font-size: 2rem;
+    }
+
+    .founderContent blockquote {
+        font-family: 'NonB-Extend-Thin';
+        letter-spacing: 1px;
+        font-size: 1.5rem;
+    }
+
+    .founderTitle h2 {
+        font-family: 'NonB-Extend-SemiBold';
+    }
+    
+    .founderTitle h3 {
+        font-family: 'NonB-Extend-Thin';
+        letter-spacing: 1px;
+        
+    }
+    
+}

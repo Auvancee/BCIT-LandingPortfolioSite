@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Aumar ◆ Aakif Umar</title>
+
+    <!--CSS Files-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize-fwd.css">
+
+    <!--All Favicon Types & Settings-->
+    <link rel="icon" type="image/png" href="../0-favicon/favicon-48x48.png" sizes="48x48" />
+    <!-- <link rel="icon" type="image/svg+xml" href="../0-favicon/" /> -->
+    <link rel="shortcut icon" href="../0-favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../0-favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/0-favicon/site.webmanifest" />
+
+    <!--Lenis Scroll JS Library-->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.14/dist/lenis.css">
+    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script> 
+
+    <!--Javascript Files-->
+    <script src="script.js"></script>
+
+    
+    
+</head>
+    <body>
+
+        <!-- [0] Preloader  -->
+
+
+
+        
+        <!-- [1] Header & Navigation  -->
+        <header>
+                <nav>
+                    <a class="logo" href="https://aumar.xyz">@aakifumar</a>
+                    <ul>
+                        <li><a href="#Intro">Home</a></li>
+                        <li><a href="#About">Synopsis</a></li>
+                        <li><a href="#Projects">Projects</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                    <a class="link" href="https://auvance.xyz" target="_blank">auvance.xyz</a>
+
+                    <!-- [1.1] Hamburger Menu  -->
+                    <!-- Codepen Link: https://codepen.io/ainalem/pen/LJYRxz -->
+                    <svg id="hamburger-menu" class="ham hamRotate ham1" viewBox="0 0 100 100" width="60" onclick="this.classList.toggle('active') ">
+                        <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                        <path class="line middle" d="m 30,50 h 40" />
+                        <path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+                    </svg>
+                         
+                </nav>
+
+                <!-- [1.2] Overlay (w/ Hamburger Onclick)  -->
+                <div class="overlay" id="menuOverlay">
+                    <div class="overlay-content">
+                      <ul>
+                        <li><a href="#Intro">Home</a></li>
+                        <li><a href="#About">Synopsis</a></li>
+                        <li><a href="#Projects">Projects</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                      </ul>
+                    </div>
+                </div>
+
+        </header>
+        
+
+        <!-- [2] Main With Contents  -->
+       <main>
+
+            <!-- [2.1] - Intro Section -->
+            <section class="Intro" id="Intro">
+                <div class="section-intro-picture">
+                    <img src="/0-images/aakif-intro-1 (expanded).png" alt="hero-image-aakif">
+                </div>
+                <div class="section-intro-information">
+                    <h1 class="section-title-intro">Hafiz Aakif Umar</h1> 
+                    <h2 class="section-headline-intro">Frontend Developer</h2>
+                    <p class="section-para-intro">
+                        Architecting digital landscapes that redefine excellence whilst  <br> 
+                        recalibrating & recreating within the ever paradigm shift of technology
+                    </p>
+                </div>
+            </section>
+
+            <!-- [2.2] - About Section -->
+            <section class="About" id="About">
+                <h1 class="title-about">Personal Synopsis</h1>
+                <!-- [2.3] - About Section -->
+                <div class="about-container">
+                    <div class="about-image">
+                        <img src="/0-images/aakif-about-2 (expanded).png" alt="aakif-profile-image">
+                    </div>
+                    <div class="about-content">
+                        <p class="about-p">
+                            A professional freelancer on the 
+                             lookout for projects or businesses to help thrive within the fast movement of technology.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- [3] - Contact Section -->
+            <section class="Projects" id="Projects">
+                <h1 class="title-project">Current Projects</h1>
+                <article class="Project-Section">
+
+                    <div class="project-card">
+                        <img src="/0-projectimages/AuvanceR1.png" alt="Project 1" class="project-image">
+                        <h1 class="sub-proj">Portfolio Website</h1>
+                        <p class="project-text">Auvance's Dev Portfolio</p>
+                        <button class="project-button" href="https://auvance.xyz">View Project</button>
+                    </div>
+                    <div class="project-card">
+                        <img src="/0-projectimages/DubaiCountryPage.png" alt="Project 2" class="project-image">
+                        <h1 class="sub-proj">Country Website</h1>
+                        <p class="project-text">Multi-Landing Page</p>
+                        <a href="https://aumar.xyz/uae-country-website/"><button class="project-button">View Project!</button></a>
+                    </div>
+                    <div class="project-card">
+                        <img src="/0-projectimages/TicTacToeGame.png" alt="Project 3" class="project-image">
+                        <h1 class="sub-proj">TicTacToe - JS Game</h1>
+                        <p class="project-text">Simple Js Game</p>
+                        <button class="project-button">COMING SOON!</button>
+                    </div>
+                    <div class="project-card">
+                        <img src="/0-projectimages/MovieHub-React.png" alt="Project 3" class="project-image">
+                        <h1 class="sub-proj">Movie Database React</h1>
+                        <p class="project-text">Movie Database</p>
+                        <button class="project-button">COMING SOON!</button>
+                    </div>
+
+                    <!-- <div class="project-card">
+                        <img src="/0-images/aakif-about-2 (expanded).png" alt="Project 3" class="project-image">
+                        <h1>yes</h1>
+                        <p class="project-text">Project 5 Description</p>
+                        <button class="project-button">View Project</button>
+                    </div> -->
+                    
+    
+                </article>
+            </section>
+
+            <!-- [4] - Contact Section -->
+            <section class="Contact" id="Contact">
+                <article class="Contact-Details">
+                    <p class="call-to-action">Like what you see?</p>
+                    <a class="contact-title" href="mailto:aakifumar55@gmail.com">Lets Get In Touch!</a>
+                </article>
+            </section>
+
+       </main>
+
+       <!-- [5] - Footer Section -->
+       <footer>
+            <div class="rectanglefoot">
+                <div class="social-media">
+                    <ul>
+                        <li><a href="#">linkedin</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Awwwards</a></li>
+                    </ul>
+                </div>
+                <div class="policies">
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+       </footer>
+
+
+    </body>
+</html>

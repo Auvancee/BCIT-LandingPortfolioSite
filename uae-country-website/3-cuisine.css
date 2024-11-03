@@ -1,0 +1,242 @@
+/* [0] Font Face & Initialization */
+body {
+    background-color: rgb(199, 106, 78);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    
+}
+
+a {
+    -webkit-tap-highlight-color:transparent;
+} 
+
+
+/* ⇣⇣ MOBILE SETTINGS ⇣⇣ */
+
+/* [1] Header & Navigation - GLOBAL CSS */
+/* [2] Hamburger Menu & Overlay - GLOBAL CSS*/
+/* [3] Image Hero & Title - GLOBAL CSS*/
+
+/* [4] Cuisine Foreground */
+.cuisine-foreground {
+    display: flex;
+    /* margin: -20px; */
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color: rgb(180, 51, 11);
+    padding-top: 5%;
+    padding-bottom: 10%;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 20px;
+}
+
+.cuisine-intro img {
+    height: auto;
+    width: 100%;
+}
+
+/* [4.2] Cuisine Content */
+.cuisine-content p {
+max-width: 600px;
+}
+
+.cuisine-title, .cuisine-content {
+    text-align: center;
+}
+
+.cuisine-content p {
+    font-family: 'NonB-Extend-SemiBold';
+    font-size: 1rem;
+    color: white;
+ }
+
+ .cuisine-title {
+    font-family: 'Overused-Grotesk-Bold';
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: white;
+ }
+
+
+
+/* [4.3] Famous Cuisine Lists */
+.cuisine-famous {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+.cuisine-famous-title {
+    font-family: 'Overused-Grotesk-Bold';
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+ }
+
+ .dish h3 {
+    font-family: 'NonB-Extend-SemiBold';
+    text-transform: uppercase;
+}
+
+.dish p {
+    font-family: 'NonB-Extend-Thin';
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.dish {
+    border-radius: 20px;
+}
+
+
+
+
+
+@media (min-width: 10em) {
+
+    /* [4.3] Famous Cuisine Lists */
+    .dish-content {
+        display: grid;
+        grid-template-columns: 1;
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .dish {
+        background-color: white;
+        padding: 16px;
+        text-align: left;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+}
+
+@media (min-width: 30em) {
+
+    /* [4.3] Famous Cuisine Lists */
+    .dish-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .dish {
+        background-color: white;
+        padding: 16px;
+        text-align: left;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+}
+
+
+@media (min-width: 55em) {
+      /* [1] Header & Navigation - GLOBAL CSS */
+    /* [2] Hamburger Menu & Overlay - GLOBAL CSS*/
+    /* [3] Image Hero & Title - GLOBAL CSS*/
+
+    /* [4] Safety Foreground */
+    .cuisine-foreground {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 20px;
+        padding-right: 20px;
+     }
+
+     .cuisine-content p {
+        font-family: 'NonB-Extend-SemiBold';
+        font-size: 1.5rem;
+        color: white;
+     }
+
+     .cuisine-title {
+        font-family: 'Overused-Grotesk-Bold';
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        color: white;
+     }
+
+     .cuisine-intro img {
+        max-width: 800px;
+     }
+
+
+     /* [4.2] Cuisine Content */
+ 
+     .cuisine-content {
+         text-align: left;
+     }
+
+     /* [4.3] Famous Cuisine Lists */
+     .dish-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 20px;
+        justify-items: center;
+    }
+    
+    .dish {
+        background-color: white;
+        padding: 16px;
+        text-align: left;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .cuisine-famous {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5%;
+        padding-bottom: 10%;
+    }
+
+    .cuisine-famous-title {
+        font-family: 'Overused-Grotesk-Bold';
+        text-transform: uppercase;
+        font-size: 2.5rem;
+     }
+
+    
+
+}
+
+@media (min-width: 80em) {
+
+    /* [4] Safety Foreground */
+    .cuisine-content p {
+        font-family: 'NonB-Extend-SemiBold';
+        font-size: 2rem;
+     }
+
+     .cuisine-title {
+        font-family: 'Overused-Grotesk-Bold';
+        text-transform: uppercase;
+        font-size: 4rem;
+     }
+
+     .cuisine-intro img {
+        max-width: 800px;
+     }
+
+     /* [4.3] Famous Cuisine Lists */
+     .cuisine-famous-title {
+        font-family: 'Overused-Grotesk-Bold';
+        text-transform: uppercase;
+        font-size: 4rem;
+     }
+
+     .dish {
+        border-radius: 20px;
+    }
+
+
+
+
+}

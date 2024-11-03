@@ -1,0 +1,236 @@
+/* [0] Font Face & Initialization */
+body {
+    background-color: #50443c;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    
+}
+
+a {
+    -webkit-tap-highlight-color:transparent;
+} 
+
+
+/* ⇣⇣ MOBILE SETTINGS ⇣⇣ */
+
+/* [1] Header & Navigation - GLOBAL CSS */
+/* [2] Hamburger Menu & Overlay - GLOBAL CSS*/
+/* [3] Image Hero & Title - GLOBAL CSS*/
+
+/* [4] Credits Foreground */
+.media-credits, .info-credits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.media-content, .info-content {
+    text-align: center;
+}
+
+/* [4.1] Media Specifics (Table Generated From GPT with alterations) */
+.media-table table, .info-table table {
+    border-collapse: collapse;
+}
+
+.media-table th, .media-table td, .info-table th, .info-table td {
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-family: 'NonB-Extend-Thin';
+    letter-spacing: 1px;
+   
+}
+
+.media-table th {
+    font-weight: bold;
+}
+
+.media-table td a {
+    color: rgb(202, 0, 0);
+    text-decoration: underline;
+}
+
+/* [4.2] Info Specifics */
+.info-table table {
+    border-collapse: collapse;
+}
+
+.info-table, .media-table {
+    background-color: #f2f2f2;
+}
+
+.info-table th, .media-table th {
+    font-weight: bold;
+    font-family: 'NonB-Extend-SemiBold';
+}
+
+.info-table td a {
+    color: rgb(202, 0, 0);
+    text-decoration: underline;
+    
+}
+
+.media-content h2, .info-content h2, .form-title {
+    font-family: 'Overused-Grotesk-Bold';
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: underline;
+}
+
+.media-content p, .info-content p {
+    font-family: 'NonB-Extend-SemiBold';
+    font-size: 1rem;
+    max-width: 500px;
+    color: white;
+}
+
+table {
+    width: 100px;
+}
+
+/* ------------------------------- */
+
+
+
+/* [5] Form Section */
+.form {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form-container h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555555;
+    font-family: 'NonB-Extend-Regular';
+}
+
+legend {
+    font-family: 'NonB-Extend-SemiBold';
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #3f3f3f;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+@media (min-width: 30em) {
+    table {
+        width: 500px;
+    }
+}
+
+@media (min-width: 55em) {
+/* [1] Header & Navigation - GLOBAL CSS */
+/* [2] Hamburger Menu & Overlay - GLOBAL CSS*/
+/* [3] Image Hero & Title - GLOBAL CSS*/
+
+/* [4.1] Table Specifics */
+    .media-content, .info-content {
+        text-align: center;
+       
+    }
+
+    /* [4.1] Media Specifics */
+    
+
+    /* [4.1] Table Specifics */
+    .media-content h2, .info-content h2, .form-title {
+        font-family: 'Overused-Grotesk-Bold';
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: white;
+        text-decoration: underline;
+    }
+
+    .media-content p, .info-content p {
+        font-family: 'NonB-Extend-SemiBold';
+        font-size: 1.5rem;
+        max-width: 700px;
+        color: white;
+    }
+
+    /* [4.2] Info Specifics */
+  
+
+    /* [5] Form Section */
+    .form {
+        background-color: #ffffff;
+        padding: 1rem;
+        border-radius: 1px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 1500px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    table {
+        width: 800px;
+    }
+}
+
+
+@media (min-width: 80em) {
+    /* [4.1] Table Specifics */
+    .media-content h2, .info-content h2, .form-title {
+        font-family: 'Overused-Grotesk-Bold';
+        font-size: 4rem;
+        text-transform: uppercase;
+        color: white;
+        text-decoration: underline;
+    }
+
+    .media-content p, .info-content p {
+        font-family: 'NonB-Extend-SemiBold';
+        font-size: 2rem;
+        max-width: 1000px;
+        color: white;
+    }
+
+    table {
+        width: 1200px;
+    }
+
+    
+}

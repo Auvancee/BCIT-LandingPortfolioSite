@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuisine ◉ United Arab Emirates</title>
+
+    <!--CSS Files-->
+    <!-- <link rel="stylesheet" href="#> -->
+    <link rel="stylesheet" href="3-cuisine.css">
+    <link rel="stylesheet" href="0-global.css">
+    <link rel="stylesheet" href="0-normalize-fwd.css">
+
+    <!--All Favicon Types & Settings-->
+    <link rel="icon" type="image/png" href="0-favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="0-favicon/favicon.svg" />
+    <link rel="shortcut icon" href="0-favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="0-favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="U.A.E" />
+    <link rel="manifest" href="0-favicon/site.webmanifest" />
+
+    <!--Lenis Scroll JS Library-->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.14/dist/lenis.css">
+    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script> 
+
+
+    <!--Javascript Files-->
+    <script src="0-global.js"></script>
+</head>
+    <body>
+
+         <!-- [0] Preloader  -->
+
+
+         <!-- [1] Header & Navigation (GLOBAL)  -->
+        <header>
+            <nav>
+                <img src="0-favicon/favicon-96x96.png" class="logo-image" alt="uae-flag-logo">
+                <ul>
+                    <a href="#maincontent" id="skip_to_main" tabindex="0">(skip to main content)</a>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="2-safety.html">Safety</a></li>
+                    <li><a href="3-cuisine.html">Cuisine</a></li>
+                    <li><a href="4-credits.html">Credits</a></li>
+                </ul>
+                
+
+                <!-- [1.1] Hamburger Menu  -->
+                <!-- Codepen Link: https://codepen.io/ainalem/pen/LJYRxz -->
+                <svg id="hamburger-menu" class="ham hamRotate ham8" viewBox="0 0 100 100" width="60" onclick="this.classList.toggle('active')">
+                    <path class="line top" d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                    <path class="line middle" d="m 30,50 h 40" />
+                    <path class="line bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+                </svg> 
+            </nav>
+
+            <!-- [1.2] Overlay (w/ Hamburger Onclick)  -->
+            <div class="overlay" id="menuOverlay">
+                <div class="overlay-content">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="2-safety.html">Safety</a></li>
+                    <li><a href="3-cuisine.html">Cuisine</a></li>
+                    <li><a href="4-credits.html">Credits</a></li>
+                  </ul>
+                </div>
+            </div>
+
+        </header>
+
+
+        <!-- [2] Main With Contents  -->
+        <main>
+            
+            <!-- [2.1] Cuisine Image & Title -->
+            <section class="hero" id="hero">
+                <h1 class="hero-title">The Cuisine</h1>
+                <img src="0-images/Cuisine-AbuDhabi.png" alt="national-food-background">
+            </section>
+
+            <!-- [2.2] Cuisine Section -->
+             <section class="cuisine-foreground" id="cuisine-f">
+                <div class="cuisine-intro">
+                    <img src="0-images/Cuisine.jpg" alt="traditional-food" tabindex="0">
+                </div>
+                <div class="cuisine-content">
+                    <h2 class="cuisine-title" tabindex="0">Traditional Cuisine</h2>
+                    <p>Like everywhere, Emirati food reflected the region’s culture, climate, and resources.
+                        After discovering oil and the influx of expats, their cuisine underwent many changes.  
+                    </p>
+                </div>
+             </section>
+
+             <!-- [2.3] Famous Cuisine Lists -->
+            <section class="cuisine-famous">
+                <h2 class="cuisine-famous-title" tabindex="0">Famous Dishes in UAE</h2>
+                    <article class="dish-content">
+                        <div class="dish">
+                            <h3 tabindex="0">Khuzi</h3>
+                            <img src="https://travelfoodatlas.com/wp-content/uploads/2023/05/Khuzi.jpg" alt="dish-1" tabindex="0">
+                            <p tabindex="0">Khuzi is the national dish of the UAE, made from roasted mutton that is set atop a bed 
+                                of fragrant rice and vegetables and topped with roasted nuts and raisins. 
+                            </p>
+                        </div>
+                        <div class="dish">
+                            <h3 tabindex="0">Shawarma</h3>
+                            <img src="https://travelfoodatlas.com/wp-content/uploads/2023/05/Shawarma-.jpg" alt="dish-2" tabindex="0">
+                            <p tabindex="0">Shawarma is not a specific dish but instead a method of meat preparation. 
+                                It is shaved off in small chunks and typically stuffed into pockets of pita bread.
+                            </p>
+                        </div>
+                        <div class="dish">
+                            <h3 tabindex="0">Machboos</h3>
+                            <img src="https://travelfoodatlas.com/wp-content/uploads/2023/05/Machboos.jpg" alt="dish-3" tabindex="0">
+                            <p tabindex="0">Machboos is a rice dish seasoned with aromatic spices and served with grilled meats, 
+                                often mutton, lamb, or chicken. This dish is very similar to Indian Biryani.
+                            </p>
+                        </div>
+                        <div class="dish">
+                            <h3 tabindex="0">Balaleet</h3>
+                            <img src="https://travelfoodatlas.com/wp-content/uploads/2023/05/Balaleet.jpg" alt="dish-4" tabindex="0">
+                            <p tabindex="0">Balaleet is a savory and sweet dish made by mixing noodles with sugar, cardamom, 
+                                rose water, and saffron. The dish is topped with a fried egg omelet.
+                            </p>
+                        </div>
+                        <div class="dish">
+                            <h3 tabindex="0">Samboosa</h3>
+                            <img src="https://travelfoodatlas.com/wp-content/uploads/2023/05/Samboosa.jpg" alt="dish-5" tabindex="0">
+                            <p tabindex="0">A fried triangle pastry filled with spiced meat, vegetables, cheese, and nuts.
+                                The Arabic take on the Indian samosa, typically thinner.
+                            </p>
+                        </div>
+                        <div class="dish">
+                            <h3 tabindex="0">Knafeh</h3>
+                            <img src="https://travelfoodatlas.com/wp-content/uploads/2023/05/Knafeh-1.jpg" alt="dish-6" tabindex="0">
+                            <p tabindex="0">A sweet, cheesy, cake-like dessert dish made from kataifi dough that is soaked in syrup. 
+                                This can be completed with an assortment of toppings; nuts, raisins, or clotted cream. 
+                            </p>
+                        </div>
+                        <div class="dish">
+                            <h3 tabindex="0">Chebab</h3>
+                            <img src="https://travelfoodatlas.com/wp-content/uploads/2023/05/Chebab.jpg" alt="dish-7" tabindex="0">
+                            <p tabindex="0">A great choice for breakfast, Chebab is a yeasted pancake flavored with cardamom and 
+                                saffron and topped with butter, honey, date syrup, or jam.
+                            </p>
+                        </div>
+                        <div class="dish">
+                            <h3 tabindex="0">Luqaimat</h3>
+                            <img src="https://travelfoodatlas.com/wp-content/uploads/2023/05/Luqaimat-1.jpg" alt="dish-8" tabindex="0">
+                            <p tabindex="0">luqaimat are deep-fried dumplings that are dipped or drizzled in sweeteners; honey,
+                                sugar syrup, or date syrup. A treat often enjoyed at cafes alongside classic arab coffee.</p>
+                        </div>
+                    </article>
+            </section>
+
+
+
+
+
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <div class="menu-footer">
+                    <h4 class="footer-subtitle-1">Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="2-safety.html">Safety</a></li>
+                        <li><a href="3-cuisine.html">Cuisine</a></li>
+                        <li><a href="4-credits.html">Credits</a></li>
+                    </ul>
+                </div>
+                <div class="social-footer">
+                    <h4 class="footer-subtitle-2">Other Links</h4>
+                    <ul>
+                        <li><a href="https://aumar.xyz/">Portfolio</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Distribution Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

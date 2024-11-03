@@ -1,0 +1,613 @@
+/* [0] Font Face & Initialization */
+@font-face {
+    font-family: 'Coolvetica-RG';
+    src: url(/0-fonts/0\ -\ coolvetica\ rg.otf);
+}
+
+@font-face {
+    font-family: 'CSGilbert-Mono';
+    src: url(/0-fonts/1\ -\ CSGilbertMono.otf);
+}
+
+@font-face {
+    font-family: 'Georgia-ExtraL';
+    src: url(/0-fonts/2\ -\ Georgia-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: 'Georgia-Black';
+    src: url(/0-fonts/2\ -\ Georgia-Black.ttf);
+}
+
+
+body {
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* body::-webkit-scrollbar {
+    display: none;
+} */
+
+a {
+    -webkit-tap-highlight-color:transparent;
+}   
+
+/* ⇣⇣ MOBILE SETTINGS ⇣⇣ */
+
+
+/* [1] Header & Navigation */
+nav {
+    
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    border-radius: 70px;
+
+    font-family: 'Georgia-ExtraL';
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+
+nav li, .link {
+    display: none;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0; 
+}
+
+nav a {
+    color: black;   
+    text-decoration: none;
+    letter-spacing: 0.1px;
+}
+
+.logo {
+    transform: translateY(19px);
+}
+
+/* [2] Hamburger Menu */
+/* Codepen Link: https://codepen.io/ainalem/pen/LJYRxz */
+/* Note: Adjusted a few things to match my website. */
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 2;
+}
+
+.hamRotate.active {
+    transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+    transform: rotate(180deg);
+}
+
+
+.line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke:#000000;
+    stroke-width: 3px;
+    stroke-linecap:round;
+}
+  
+.ham1 .top {
+    stroke-dasharray: 40 139;
+}
+  
+.ham1 .bottom {
+    stroke-dasharray: 40 180;
+}
+  
+.ham1.active .top {
+    stroke-dashoffset: -98px;
+}
+  
+.ham1.active .bottom {
+    stroke-dashoffset: -138px;
+}
+
+
+
+/* [2.1] Overlay Activation (w/ Burger Menu */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 100%; 
+    width: 100%;
+    height: 100%;
+    background-color: rgba(14, 0, 0, 0.9); 
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.6s ease-in-out;
+    --webkit-backdrop-filter: blur(4px); /* Legacy Webkit */
+    backdrop-filter: blur(4px); /* Legacy Webkit */
+}
+
+.overlay.active {
+    transform: translateX(-100%); 
+}
+
+.overlay-content {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.overlay-content ul {
+    margin: 0 auto;
+    list-style: none;
+    padding: 20px;
+    font-family: 'Georgia-Black';
+    font-size: 50px;
+}
+
+.overlay-content a { 
+    color: rgb(255, 255, 255);   
+    text-decoration: none;
+}
+
+/* [3] Intro Section */
+.Intro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.section-intro-picture {
+    height: 350px;
+    width: 400px;
+    /*
+    width: 280px;
+    height: 280px;
+    */
+}
+
+.section-intro-picture img {
+    border-radius: 50%;
+    scale: 0.7;
+    /* margin-top: 0%; */
+}
+
+.section-intro-information {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-para-intro {
+    line-height: 20px;
+    text-align: center;
+    font-family: 'CSGilbert-Mono';
+    font-size: 20px;
+}
+
+.section-title-intro {
+    font-family: 'Georgia-Black';
+    letter-spacing: 1px;
+}
+
+.section-headline-intro {
+    font-family: 'Georgia-ExtraL';
+    letter-spacing: 1px;
+    margin-top: -2%;
+}
+
+.section-title-intro, .section-para-intro,
+.section-headline-intro {
+    color: white;
+}
+
+
+/* .section-title-about, .section-headline-about {
+    font-family: 'Coolvetica-RG';
+} */
+
+
+/* [4] About Section */
+.About {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20%;
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.title-about {
+    color: white;
+    padding-top: 0%;
+    font-family: 'Georgia-Black';
+    font-size: 1.5rem;
+    
+}
+
+.about-content {
+    color: white;
+}
+
+.about-p {
+    text-align: center;
+     font-size: 20px;
+     font-family: 'CSGilbert-Mono';
+}
+
+/* [6] Contact Section  */
+.Contact-Details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 20%;
+    margin-bottom: 10%; */
+}
+
+.call-to-action {
+    color: white;
+    font-size: 20px;
+    font-family: 'Georgia-ExtraL';
+}
+
+.contact-title {
+   font-size: 30px;
+   color: white;
+   text-decoration: none;
+   font-family: 'Georgia-Black';
+   letter-spacing: 1px;
+}
+
+
+/* [7] Footer */
+footer {
+    background-color: rgba(30, 30, 30, 0.273);
+    height: auto;
+    width: 100%;
+    margin-top: 20%;
+    
+}
+
+.rectanglefoot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.social-media ul, .policies ul {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+    
+}
+
+.social-media li a, .policies li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Georgia-ExtraL';
+    letter-spacing: 2px;
+}
+
+
+/* [5] Project Section */
+/* <--------------  Projects Styling for 30em & 10em -----------------> */
+@media (min-width: 30em) {
+    .Project-Section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .title-project {
+        text-align: center;
+        color: white;
+        font-size: 2rem;
+        padding-top: 20%;
+        font-family: 'Georgia-Black';
+   }
+
+   .project-card {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 16px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-button {
+        padding: 10px 20px;
+        background-color: #000000;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+        transition: 0.4s;
+        font-family: 'CSGilbert-Mono';
+    }
+
+    .project-button:hover {
+        background-color: #3a3a3a;
+        
+    }
+}
+
+@media (min-width: 10em) {
+    .Project-Section {
+        display: grid;
+        grid-template-columns: 1;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .title-project {
+        text-align: center;
+        color: white;
+        font-size: 1.5rem;
+        padding-top: 20%;
+        font-family: 'Georgia-Black';
+   }
+
+   .sub-proj {
+        font-family: 'Georgia-Black';
+        font-size: 20px;
+        letter-spacing: 1px ;
+    }
+
+
+   .project-text {
+        font-size: 16px;
+        color: #333;
+        font-family: 'CSGilbert-Mono';
+    }
+
+
+
+   .project-card {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 16px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-button {
+        padding: 10px 20px;
+        background-color: #000000;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+        transition: 0.4s;
+        border-radius: 50px;
+        font-family: 'CSGilbert-Mono';
+    }
+
+    .project-button:hover {
+        background-color: #3a3a3a;
+        
+    }
+}
+/* <-------------- Projects End Styling for 30em & 10em -----------------> */
+
+@media (min-width: 75em) {
+    .About {
+        max-width: 90rem;
+    }
+}
+
+
+@media (min-width: 55em) { /* ⇣⇣ DESKTOP SETTINGS ⇣⇣ */
+    
+    /* [1] Header & Navigation */
+    .logo {
+        transform: translateY(0px);
+    }
+
+    nav { 
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        /* margin: 20px; */
+        text-decoration: none; 
+        padding: 2rem;
+    }
+
+    nav ul {
+        /* margin: 0 auto; */
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    nav a {
+        color: black;   
+        text-decoration: none; 
+        transition: 0.4s;
+    }
+
+    nav a:hover {
+        color: rgba(0, 0, 0, 0.322);
+    }
+
+    nav li, .link {
+        display: block;
+    }
+    
+
+    /* [2] Hamburger Menu */
+    .ham {
+        display: none;
+    }
+
+    .overlay {
+        display: none;
+    }
+
+    /* [3] Intro Section */
+    .section-intro-picture img {
+        scale: 1;
+    }
+
+    .Intro {
+        /* margin-top: 10%; */
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        gap: 3%;
+    }
+    
+    .section-title-intro {
+        font-size: 3rem;
+    }
+    
+    .section-headline-intro {
+        font-size: 2rem;
+        margin-top: -2%;
+    }
+
+    
+
+    /* [4] About Section */
+    .About {
+        max-width: 90rem;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    .about-p {
+        text-align: left;
+        font-size: 40px;
+    }
+
+    .title-about  {
+        font-size: 5rem;
+        padding-top: 20%;
+    }
+    
+
+
+   /* [5] Project Section */
+    .Projects {
+        margin-top: 20%;
+    }
+
+   .title-project {
+        text-align: center;
+        color: white;
+        font-size: 5rem;
+   }
+   
+   .Project-Section {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 20px;
+        justify-items: center;
+    }
+
+    .project-card {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 16px;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 12px;
+    }
+
+    .project-text {
+        font-size: 20px;
+        color: #333;
+        margin-bottom: 16px;
+        font-family: 'CSGilbert-Mono';
+    }
+
+    .project-button {
+        padding: 10px 20px;
+        background-color: #000000;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+        transition: 0.4s;
+        font-family: 'CSGilbert-Mono';
+    }
+
+    .project-button:hover {
+        background-color: #3a3a3a;
+    }
+
+    /* [6] Project Section */
+    .rectanglefoot {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }  
+
+    .social-media li {
+        text-align: left;
+    }
+
+    .policies li {
+        text-align: right;
+    }
+
+    /* [7] Contact Section  */
+    .Contact-Details {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .contact-title {
+        font-size: 70px;
+        transition: 0.4s;
+    }
+
+    .contact-title:hover {
+        color: rgba(255, 255, 255, 0.127);
+    }
+}
+

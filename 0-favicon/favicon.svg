@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1000" height="1000"><g clip-path="url(#SvgjsClipPath1089)"><rect width="1000" height="1000" fill="#ffffff"></rect><g transform="matrix(0.78125,0,0,0.78125,100.02078099548817,100.00000265985727)"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1024" height="1024"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 1024">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #231f20;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: url(#radial-gradient);
+        stroke: #000;
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="510.99" cy="554.98" fx="510.99" fy="554.98" r="448.42" gradientTransform="translate(.97 -29.38) scale(.99 .9)" gradientUnits="userSpaceOnUse">
+      <stop offset=".07" stop-color="#2d2a2b"></stop>
+      <stop offset=".99" stop-color="#302e2f"></stop>
+    </radialGradient>
+  <clipPath id="SvgjsClipPath1089"><rect width="1000" height="1000" x="0" y="0" rx="500" ry="500"></rect></clipPath></defs>
+  <g id="Layer_7">
+    <path class="cls-1" d="M1021,511.03c0,282.04-227.84,510.67-508.9,510.67S3.19,793.07,3.19,511.03,240.79,2.3,521.85,2.3s499.15,226.7,499.15,508.73Z"></path>
+  </g>
+  <g id="Layer_6">
+    <path class="cls-2" d="M870.87,363.5s-56.91-240.51-118.89-289.55c0,0,24.76,735.04-125.48,647.62-104.18-60.62-25.67-709.63-25.67-709.63-233.13,254.22-468.18,835.41-468.18,835.41l201.97-97.39s56.91-169.29,89.8-200.82c0,0,22.77,344.43,160.62,373.61,137.86,29.19,354.13-221.83,285.83-559.25ZM474.26,462.65c-22.77-29.19-67.03-18.66-67.03-18.66l101.03-198.51-34,217.16Z"></path>
+  </g>
+</svg></svg></g></g></svg>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home ◉ United Arab Emirates</title>
+
+    <meta name="description" content="Information about the United Arab Emirates;
+    Its History, Culture & Safety.">
+
+    <!--CSS Files-->
+    <link rel="stylesheet" href="1-home.css">
+    <link rel="stylesheet" href="0-global.css">
+    <link rel="stylesheet" href="0-normalize-fwd.css">
+
+    <!--All Favicon Types & Settings-->
+    <link rel="icon" type="image/png" href="0-favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="0-favicon/favicon.svg" />
+    <link rel="shortcut icon" href="0-favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="0-favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="U.A.E" />
+    <link rel="manifest" href="0-favicon/site.webmanifest" />
+
+    <!--Lenis Scroll JS Library-->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.14/dist/lenis.css">
+    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script> 
+
+
+    <!--Javascript Files-->
+    <script src="0-global.js"></script>
+</head>
+    <body>
+
+         <!-- [0] Preloader  -->
+
+
+         <!-- [1] Header & Navigation (GLOBAL)  -->
+        <header>
+            <nav>
+                <img src="0-favicon/favicon-96x96.png" class="logo-image" alt="uae-flag-logo">
+                <ul>
+                    <a href="#maincontent" id="skip_to_main" tabindex="0">(skip to main content)</a>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="2-safety.html">Safety</a></li>
+                    <li><a href="3-cuisine.html">Cuisine</a></li>
+                    <li><a href="4-credits.html">Credits</a></li>
+                </ul>
+                
+
+                <!-- [1.1] Hamburger Menu  -->
+                <!-- Codepen Link: https://codepen.io/ainalem/pen/LJYRxz -->
+                <svg id="hamburger-menu" class="ham hamRotate ham8" viewBox="0 0 100 100" width="60" onclick="this.classList.toggle('active')">
+                    <path class="line top" d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                    <path class="line middle" d="m 30,50 h 40" />
+                    <path class="line bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+                </svg> 
+            </nav>
+
+            <!-- [1.2] Overlay (w/ Hamburger Onclick)  -->
+            <div class="overlay" id="menuOverlay">
+                <div class="overlay-content">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="2-safety.html">Safety</a></li>
+                    <li><a href="3-cuisine.html">Cuisine</a></li>
+                    <li><a href="4-credits.html">Credits</a></li>
+                  </ul>
+                </div>
+            </div>
+
+        </header>
+
+
+        <!-- [2] Main With Contents  -->
+        <main id="#maincontent">
+
+            <!-- [2.1] About Image & Title -->
+            <section class="hero" id="hero">
+                <h1 class="hero-title">United Arab Emirates</h1>
+                <img src="0-images/About-Home-1.jpg" alt="dubai-background" >
+            </section>
+
+            <!-- [2.2] About Intro -->
+            <section class="about-foreground" id="foreground">
+                <div class="about-content-intro">
+                    <h2>About The U.A.E</h2>
+                    <img src="0-images/Flag-Uae.png" alt="uae-flag" tabindex="0">
+                </div>
+                <div class="about-content">
+                   <p tabindex="0">The United Arab Emirates (UAE), is a country in West Asia, in the Middle East. 
+                    It is a federal, elective monarchy composed of seven emirates, with Abu Dhabi as its capital.
+                    </p>
+                </div>
+            </section>
+
+            <!-- [2.3] Highlights -->
+            <section class="about-highlights" id="highlights">
+                <div class="highlight-about">
+                    <h2 tabindex="0">The 7 Emirates</h2>
+                    <p tabindex="0">
+                    Here is the list of the 7 different emirates (states) that were founded during 
+                    the formation and establishment of the United Arab Emirates:
+                    </p>
+                </div>
+
+                <div class="highlight-emirate-about">
+                    <article class="emirate-images">
+                        <div class="emirate">
+                            <img src="0-images/Emirate-1.png" alt="Emirate-1" class="emirate-image"  tabindex="0">
+                            <h3 class="emirate-title" tabindex="0">Abu Dhabi</h3>
+                            <p class="emirate-text" tabindex="0">1st Emirate</p>
+                        </div>
+                        <div class="emirate">
+                            <img src="0-images/Emirate-2.png" alt="Emirate-2" class="emirate-image"  tabindex="0">
+                            <h3 class="emirate-title"  tabindex="0">Dubai</h3>
+                            <p class="emirate-text"  tabindex="0">2nd Emirate</p>
+                        </div>
+                        <div class="emirate">
+                            <img src="0-images/Emirate-3.png" alt="Emirate-3" class="emirate-image"  tabindex="0">
+                            <h3 class="emirate-title"  tabindex="0">Sharjah</h3>
+                            <p class="emirate-text" tabindex="0">3rd Emirate</p>
+                        </div>
+                        <div class="emirate">
+                            <img src="0-images/Emirate-4.png" alt="Emirate-4" class="emirate-image"  tabindex="0">
+                            <h3 class="emirate-title" tabindex="0">Ajman</h3>
+                            <p class="emirate-text" tabindex="0">4th Emirate</p>
+                        </div>
+                        <div class="emirate">
+                            <img src="0-images/Emirate-5.png" alt="Emirate-5" class="emirate-image" tabindex="0">
+                            <h3 class="emirate-title" tabindex="0">Umm Al Quwain</h3>
+                            <p class="emirate-text" tabindex="0">5th Emirate</p>
+                        </div>
+                        <div class="emirate">
+                            <img src="0-images/Emirate-6.png" alt="Emirate-6" class="emirate-image" tabindex="0">
+                            <h3 class="emirate-title" tabindex="0">Ras Al Khaimah</h3>
+                            <p class="emirate-text" tabindex="0">6th Emirate</p>
+                        </div>
+                        <div class="emirate">
+                            <img src="0-images/Emirate-7.png" alt="Emirate-7" class="emirate-image" tabindex="0">
+                            <h3 class="emirate-title" tabindex="0">Fujairah</h3>
+                            <p class="emirate-text" tabindex="0">7th Emirate</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- [2.4] Founder -->
+            
+            <section>
+                <h1 class="history-title" tabindex="0">History of U.A.E</h1>
+                <article class="foundingFather">
+                    <div class="founderTitle">
+                        <h2 tabindex="0">Sheikh Zayed bin Sultan Al Nahyan</h2>
+                        <h3 tabindex="0">Former Ruler of Abu Dhabi and Founding President of the UAE</h3>
+                        <img src="https://www.dubaiomg.com/wp-content/uploads/2019/02/1-hh-sheikh-zayed-bin-sultan-al-nahyan-masood-parvez1.jpg" alt="founder-of-uae" tabindex="0">
+                    </div>
+                    <div class="founderContent">
+                        <p tabindex="0">Known as the Father of the Nation for his role in forming the United Arab Emirates, The first
+                            president of U.A.E. 
+                            He also served as the Ruler of the emirate of Abu Dhabi from 1966 to 2004. 
+                        </p>
+                        <blockquote tabindex="0">
+                            Quote: "Education is like a lantern, which lights your
+                            way in a dark alley."
+                        </blockquote>
+                    </div>
+                </article>
+            </section>
+
+
+
+
+        </main>
+
+
+        <footer>
+            <div class="footer-container">
+                <div class="menu-footer">
+                    <h4 class="footer-subtitle-1">Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="2-safety.html">Safety</a></li>
+                        <li><a href="3-cuisine.html">Cuisine</a></li>
+                        <li><a href="4-credits.html">Credits</a></li>
+                    </ul>
+                </div>
+                <div class="social-footer">
+                    <h4 class="footer-subtitle-2">Other Links</h4>
+                    <ul>
+                        <li><a href="https://aumar.xyz/">Portfolio</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Distribution Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </footer>
+    </body>
+</html>

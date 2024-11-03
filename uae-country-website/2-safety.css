@@ -1,0 +1,353 @@
+/* [0] Font Face & Initialization */
+body {
+    background-color: rgb(133, 124, 103);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    
+}
+
+a {
+    -webkit-tap-highlight-color:transparent;
+} 
+
+/* ⇣⇣ MOBILE SETTINGS ⇣⇣ */
+
+/* [1] Header & Navigation - GLOBAL CSS */
+/* [2] Hamburger Menu & Overlay - GLOBAL CSS*/
+/* [3] Image Hero & Title - GLOBAL CSS*/
+
+/* [4] Safety Foreground */
+.safety-foreground {
+    display: flex;
+    /* margin: -20px; */
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(203, 203, 203);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    gap: 30px;
+}
+
+.safety-intro img {
+    height: auto;
+    width: 100%;  
+}
+
+.safety-content {
+    max-width: 600px;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.safety-content {
+    font-family: 'NonB-Extend-SemiBold';
+}
+
+.safety-title {
+    font-family: 'Overused-Grotesk-Bold';
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+
+.safety-title, .safety-content {
+    text-align: center;
+}
+
+/* [4.1] Safety Highlights */
+.def-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.safety-highlights {
+    padding-top: 20%;
+    padding-bottom: 20%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.safety-high-title {
+    text-align: center;
+}
+
+.safety-highlight-content {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: 'NonB-Extend-SemiBold';
+}
+
+
+
+.def-image-container img {
+    gap: 20px;
+    border-radius: 5px;
+    transition: 0.4s;
+    
+}
+
+.def-image-container {
+    gap: 20px;
+}
+
+
+
+
+/* [4.2] Safety Video */
+.safety-video {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(54, 52, 47);
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.safety-high-title {
+    font-family: 'Overused-Grotesk-Bold';
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.video-content {
+    text-align: center;
+}
+
+.video-content p {
+    font-family: 'NonB-Extend-SemiBold';
+    font-size: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+    color: white;
+}
+
+
+.video-title {
+    font-family: 'Overused-Grotesk-Bold';
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+.video-container {
+    margin: 0 auto;
+}
+
+
+
+iframe {
+    margin-top: 10%;
+    aspect-ratio: 16/10;
+    border: none;
+    box-shadow: 0px 0px 5px black;
+    width: 480px;
+    height: 270px;
+} 
+
+
+
+
+@media (min-width: 55em) { /* ⇣⇣ DESKTOP SETTINGS ⇣⇣ */
+
+    /* [1] Header & Navigation - GLOBAL CSS */
+    /* [2] Hamburger Menu & Overlay - GLOBAL CSS*/
+    /* [3] Image Hero & Title - GLOBAL CSS*/
+
+    /* [4] Safety Foreground */
+    .safety-foreground {
+       display: flex;
+       flex-direction: row-reverse;
+       justify-content: center;
+       padding-top: 10%;
+       padding-bottom: 10%;
+    }
+
+    .safety-content {
+        text-align: left;
+        max-width: 400px;
+        background-color: white;
+        padding: 30px;
+        border-radius: 20px;
+    }
+
+    .safety-content p {
+        font-size: 1.5rem;
+    }
+
+    .safety-intro img {
+        width: 400px;  
+    }
+
+    .safety-title {
+        font-family: 'Overused-Grotesk-Bold';
+        text-transform: uppercase;
+        font-size: 2.5rem;
+    }
+
+    .safety-high-title {
+        font-family: 'Overused-Grotesk-Bold';
+        text-transform: uppercase;
+        font-size: 2.5rem;
+    }
+    
+
+    /* [4.1] Safety Highlights */
+    .safety-highlights {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .safety-highlight-content {
+        text-align: center;
+        max-width: 1000px;
+        margin: 0 auto;
+        font-family: 'NonB-Extend-SemiBold';
+        font-size: 2rem;
+    }
+
+    .def-image-container{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .def-image-container img {
+        border-radius: 5px;
+        transition: 0.4s;
+        
+    }
+
+    .def-image-container img:hover {
+        box-shadow: 0px 0px 10px black;
+        scale: 0.9;
+    }
+
+
+    /* [4.2] Safety Video */
+    .safety-video {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+
+    .video-container {
+        margin: 0 auto;
+        scale: 1;
+    }
+
+    iframe {
+        width: 960px;
+        height: 540px;
+        margin-top: 5%;
+    }
+
+    
+
+    .video-title {
+        font-family: 'Overused-Grotesk-Bold';
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    .video-content p {
+        font-family: 'NonB-Extend-SemiBold';
+        font-size: 1.5rem;
+        max-width: 800px;
+        margin: 0 auto;
+        color: white;
+    }
+}
+
+
+@media (min-width: 70em) {
+    .safety-content {
+        text-align: left;
+        max-width: 500px;
+        background-color: white;
+        padding: 30px;
+        border-radius: 20px;
+    }
+
+    .safety-content p {
+        font-size: 1.5rem;
+    }
+
+    .safety-intro img {
+        width: 500px;  
+    }
+
+    .safety-title {
+        font-family: 'Overused-Grotesk-Bold';
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+
+    .video-title {
+        font-family: 'Overused-Grotesk-Bold';
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    
+}
+
+@media (min-width: 80em) {
+    
+    .safety-content {
+        text-align: left;
+        max-width: 700px;
+        background-color: white;
+        padding: 30px;
+        border-radius: 20px;
+    }
+
+    .safety-content p {
+        font-size: 1.5rem;
+    }
+
+    .safety-intro img {
+        width: 600px;  
+    }
+    
+    .safety-title {
+        font-family: 'Overused-Grotesk-Bold';
+        text-transform: uppercase;
+        font-size: 4rem;
+    }
+
+    .safety-content {
+        font-family: 'NonB-Extend-SemiBold';
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .safety-high-title {
+        font-family: 'Overused-Grotesk-Bold';
+        text-transform: uppercase;
+        font-size: 3rem;
+    }
+
+    .video-title {
+        font-family: 'Overused-Grotesk-Bold';
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+
+    .video-content p {
+        font-family: 'NonB-Extend-SemiBold';
+        font-size: 2rem;
+        max-width: 1000px;
+        margin: 0 auto;
+        color: white;
+    }
+
+
+
+}
