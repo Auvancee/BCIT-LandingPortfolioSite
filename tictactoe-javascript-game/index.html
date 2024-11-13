@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A basic Tic-Tac-Toe Javascript game.">
+    <title>Tic-Tac-Toe Game</title>
+
+    <!--All Favicon Types & Settings-->
+    <link rel="icon" type="image/png" href="/0-favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/0-favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/0-favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/0-favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="TicTacToe" />
+    <link rel="manifest" href="/0-favicon/site.webmanifest" />
+
+    <!--CSS Files-->
+    <link rel="stylesheet" href="normalize-fwd.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!--Script Files-->
+    <script src="script.js" defer></script>
+</head>
+    <body>
+        <main>
+                <section class="GameContainter">
+                    <!-- [1] Title Screen W/ Winner Message -->
+                    <h1>Tic-Tac-Toe</h1>
+                    <p>The infamous Tic-Tac-Toe Game! Tap anywhere to start
+                        playing! X starts first. May the best player win.
+                    </p>
+                    <!-- [2] 3x3 TicTacToe Grid -->
+                    <article class="grid">
+                        <div class="cell" id="cell-0"></div>
+                        <div class="cell" id="cell-1"></div>
+                        <div class="cell" id="cell-2"></div>
+                        <div class="cell" id="cell-3"></div>
+                        <div class="cell" id="cell-4"></div>
+                        <div class="cell" id="cell-5"></div>
+                        <div class="cell" id="cell-6"></div>
+                        <div class="cell" id="cell-7"></div>
+                        <div class="cell" id="cell-8"></div>
+                    </article>
+
+                    <h2 id="winnerMessage"></h2> <!-- [1.2] Winner Message (Displayed W/ Javascript) -->
+
+                    <!--[3] Button To Play Again -->
+                    <button id="resetButton" onclick="resetGame()">Play Again</button> <!-- Reset button -->
+                </section>
+        </main>
+
+    </body>
+</html>
