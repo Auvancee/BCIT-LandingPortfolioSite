@@ -173,8 +173,8 @@ nav a {
 }
 
 .section-intro-picture {
-    height: 350px;
-    width: 400px;
+    height: auto;
+    width: auto;
     /*
     width: 280px;
     height: 280px;
@@ -388,6 +388,8 @@ footer {
 
 
 
+
+
    .project-card {
         background-color: #f9f9f9;
         border: 1px solid #ddd;
@@ -494,6 +496,15 @@ footer {
     .section-headline-intro {
         font-size: 2rem;
         margin-top: -2%;
+    }
+
+    .section-intro-picture {
+        height: 350px;
+        width: 400px;
+        /*
+        width: 280px;
+        height: 280px;
+        */
     }
 
     
