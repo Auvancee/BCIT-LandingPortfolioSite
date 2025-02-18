@@ -281,35 +281,69 @@ nav a {
 
 
 /* [7] Footer */
-footer {
-    background-color: rgba(30, 30, 30, 0.273);
-    height: auto;
-    width: 100%;
-    margin-top: 20%;
-    
-}
+.footer-container {
+    margin-top: 45%;
+  }
 
-.rectanglefoot {
+  .footer-section {
+    display: flex;
+    flex-direction: column; 
+  }
+  
+  .footer-content {
+    list-style: none;
+    padding: 20px;
+  }
+
+
+  .f-list-heading {
+    list-style: none;
+    font-family: 'NeueM-Bold';
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: white;
+  }
+
+  .bold-list {
+    list-style: none;
+    font-size: 1.5rem;
+    font-family: 'NeueM-Med';
+
+  }
+
+  .sub-list {
+    font-size: 1.2rem;
+    font-family: 'NeueM-Thin';
+    color: white;
+  }
+  
+  .sub-list a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+
+    
+  .list-line {
+    width: 100%; /* Make the line span the entire width of the container */
+    background: rgba(98, 98, 98, 0.364);
+    height: 1px;
+    margin-top: 10px; /* Adjust as per your design */
+    margin-bottom: 10px; /* Adjust as per your design */
+  } 
+
+
+  .copyright {
     display: flex;
     flex-direction: column;
-    align-items: center;
-   
-}
-
-.social-media ul, .policies ul {
-    text-align: center;
-    list-style: none;
-    padding: 0;
+    justify-content: space-between;
     margin: 20px;
-    
-}
 
-.social-media li a, .policies li a {
-    text-decoration: none;
-    color: white;
-    font-family: 'Georgia-ExtraL';
-    letter-spacing: 2px;
-}
+    font-family: 'Endgraph-Regular';
+    text-transform: uppercase;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    opacity: 0.6;
+  }
 
 @media (min-width: 10em) {
 
@@ -434,6 +468,58 @@ footer {
         background-color: #3a3a3a;
         
     }
+
+    /* [9] Footer Section */
+  .footer-section {
+    display: flex;
+    flex-direction: column; 
+  }
+  
+  .footer-content {
+    list-style: none;
+    padding: 20px;
+  }
+
+
+  .f-list-heading {
+    list-style: none;
+    font-family: 'Endgraph-Medium';
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: white;
+  }
+
+  .bold-list {
+    list-style: none;
+    font-size: 1.5rem;
+    font-family: 'Endgraph-Regular';
+    color: white;
+  }
+
+  .sub-list {
+    font-size: 1.5rem;
+    font-family: 'Endgraph-Light';
+    color: white;
+  }
+  
+  .sub-list a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* [9] Copyright Section */
+  .copyright {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 20px;
+
+    font-family: 'Endgraph-Regular';
+    text-transform: uppercase;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    opacity: 0.6;
+  }
 }
 /* <-------------- Projects End Styling for 30em & 10em -----------------> */
 
