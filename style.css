@@ -387,12 +387,16 @@ nav a {
     }
 
    .project-card {
-        background-color: #f9f9f9;
-        border: 1px solid #ddd;
-        border-radius: 8px;
+        background-color: #b5b5b58a;
+        border: 1px solid #dddddd98;
+        border-radius: 50px;
         padding: 16px;
         text-align: center;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-card img {
+        border-radius: 20px;
     }
 
     .project-button {
@@ -443,12 +447,16 @@ nav a {
    }
 
    .project-card {
-        background-color: #f9f9f9;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        padding: 16px;
-        text-align: center;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #b5b5b58a;
+    border: 1px solid #dddddd98;
+    border-radius: 50px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-card img {
+        border-radius: 20px;
     }
 
     .project-button {
@@ -556,7 +564,7 @@ nav a {
     }
 
     nav a:hover {
-        color: rgba(0, 0, 0, 0.322);
+        color: rgba(181, 181, 181, 0.599);
     }
 
     nav li, .link {
@@ -627,7 +635,6 @@ nav a {
 
     .title-about  {
         font-size: 5rem;
-        padding-top: 20%;
     }
     
 
@@ -635,7 +642,7 @@ nav a {
    /* [5] Project Section */
 
     .Projects {
-        margin-top: 15%;
+        padding-top: 25%;
     }
 
    .title-project {
@@ -653,13 +660,17 @@ nav a {
     }
 
     .project-card {
-        background-color: #f9f9f9;
-        border: 1px solid #ddd;
-        border-radius: 8px;
+        background-color: #b5b5b58a;
+        border: 1px solid #dddddd98;
+        border-radius: 50px;
         padding: 16px;
-        width: 100%;
         text-align: center;
+        width: 100%;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-card img {
+        border-radius: 20px;
     }
 
     .project-image {
@@ -725,6 +736,7 @@ nav a {
 @media (min-width: 75em) {
     .About {
         max-width: 90rem;
+        padding-top: 20%;
     }
 
     .Project-Section {
