@@ -208,13 +208,6 @@ nav a {
 }
 
 
-/* .section-title-about, .section-headline-about {
-    font-family: 'Coolvetica-RG';
-} */
-
-
-
-
 /* [4] About Section */
 .About {
     display: flex;
@@ -338,7 +331,7 @@ nav a {
     justify-content: space-between;
     margin: 20px;
 
-    font-family: 'Endgraph-Regular';
+    font-family: 'NeueM-Thin';
     text-transform: uppercase;
     font-size: 1em;
     color: rgb(255, 255, 255);
@@ -381,8 +374,8 @@ nav a {
    .project-text {
         font-size: 1.2rem;
         margin: 0;
-        color: #333;
-        font-family: 'NeueM-Thin';
+        color: #00000091;
+        font-family: 'NeueM-Med';
         padding-bottom: 1rem;
     }
 
@@ -478,6 +471,10 @@ nav a {
     }
 
     /* [9] Footer Section */
+    .footer-container {
+        margin-top: 35%;
+      }
+    
   .footer-section {
     display: flex;
     flex-direction: column; 
@@ -491,7 +488,7 @@ nav a {
 
   .f-list-heading {
     list-style: none;
-    font-family: 'Endgraph-Medium';
+    font-family: 'NeueM-Bold';
     text-transform: uppercase;
     font-size: 2.5rem;
     color: white;
@@ -500,13 +497,13 @@ nav a {
   .bold-list {
     list-style: none;
     font-size: 1.5rem;
-    font-family: 'Endgraph-Regular';
+    font-family: 'NeueM-Med';
     color: white;
   }
 
   .sub-list {
     font-size: 1.5rem;
-    font-family: 'Endgraph-Light';
+    font-family: 'NeueM-Thin';
     color: white;
   }
   
@@ -522,12 +519,14 @@ nav a {
     justify-content: space-between;
     margin: 20px;
 
-    font-family: 'Endgraph-Regular';
+    font-family: 'NeueM-Thin';
     text-transform: uppercase;
     font-size: 1em;
     color: rgb(255, 255, 255);
     opacity: 0.6;
   }
+
+
 }
 /* <-------------- Projects End Styling for 30em & 10em -----------------> */
 
@@ -731,6 +730,44 @@ nav a {
     .contact-title:hover {
         color: rgba(255, 255, 255, 0.127);
     }
+
+
+    /* [7] Footer */
+    .footer-container {
+        margin-top: 25%;
+      }
+
+    .footer-section {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer-content {
+        list-style: none;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .copyright {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 20px;
+    
+        font-family: 'NeueM-Thin';
+        text-transform: uppercase;
+        font-size: 1em;
+        color: rgb(255, 255, 255);
+        opacity: 0.6;
+      }
+
+
+
+
+
+
+
+
 }
 
 @media (min-width: 75em) {
