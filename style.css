@@ -248,29 +248,48 @@ nav a {
 }
 
 /* [6] Contact Section  */
-.Contact-Details {
-    padding-top: 5rem;
+/* [8] Contact Section */
+.contact-container {
+    margin-top: 45%;
+  }
+
+  .contact-details {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-top: 20%;
-    margin-bottom: 10%; */
-}
 
-.call-to-action {
-    color: white;
-    font-size: 20px;
-    font-family: 'Georgia-ExtraL';
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    padding: 40px;
+    border-radius: 10px;
+  } 
+
+  .contact-details h2, .contact-details p {
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+
+  .contact-details h2 {
     margin: 0;
-}
+    font-size: 2.5rem;
+    font-family: 'OverusedG-Bold';
+  }
+  
+  .contact-details p {
+    font-size: 1.2rem;
+    max-width: 300px;
+    font-family: 'NeueM-Med';
+  }
 
-.contact-title {
-   font-size: 30px;
-   color: white;
-   text-decoration: none;
-   font-family: 'Georgia-Black';
-   letter-spacing: 1px;
-}
+  .contact-details button {
+    border: none;
+    padding: 20px;
+    width: 250px;
+    height: 60px;
+    border-radius: 40px;
+    font-family: 'NeueM-Med';
+    background-color: rgba(201, 201, 201, 0.377);
+  }
 
 
 /* [7] Footer */
@@ -469,6 +488,45 @@ nav a {
         background-color: #3a3a3a;
         
     }
+
+    /* [8] Contact Section */
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+        background-color: rgb(47, 47, 85);
+        margin: 20px;
+        padding: 3rem;
+        border-radius: 10px;
+      } 
+    
+      .contact-details h2,  .contact-details p {
+        text-align: center;
+        color: white;
+      }
+    
+      .contact-details h2 {
+        margin: 0;
+        font-size: 4rem;
+        font-family: 'Endgraph-Medium';
+      }
+      
+      .contact-details p {
+        font-size: 1.5rem;
+        max-width: 500px;
+        font-family: 'Endgraph-Light';
+      }
+    
+      .contact-details button {
+        border: none;
+        padding: 20px;
+        width: 350px;
+        height: 100px;
+        border-radius: 40px;
+        font-family: 'TTRunsBI';
+      }
+
 
     /* [9] Footer Section */
     .footer-container {
@@ -717,19 +775,61 @@ nav a {
     }
 
     /* [7] Contact Section  */
-    .Contact-Details {
-        margin-top: 10%;
-        margin-bottom: 10%;
-    }
-
-    .contact-title {
-        font-size: 70px;
-        transition: 0.4s;
-    }
-
-    .contact-title:hover {
-        color: rgba(255, 255, 255, 0.127);
-    }
+    /* [8] Contact Section */
+.contact-container {
+    margin-top: 25%;
+  }
+  
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    background-color: rgb(47, 47, 85);
+    margin: 40px;
+    padding: 7rem;
+    border-radius: 10px;
+  } 
+  
+  .contact-details h2, .contact-details p {
+    text-align: center;
+    color: white;
+  }
+  
+  .contact-details h2 {
+    margin: 0;
+    font-size: 5rem;
+    font-family: 'Endgraph-Medium';
+  }
+  
+  .contact-details p {
+    font-size: 1.5rem;
+    max-width: 700px;
+    font-family: 'Endgraph-Light';
+  }
+  
+  .contact-details button {
+    border: none;
+    padding: 20px;
+    width: 450px;
+    height: 120px;
+    border-radius: 40px;
+    font-family: 'TTRunsBI';
+    color: rgb(255, 189, 9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: pulse 3s infinite alternate ease-in-out;
+    
+  }
+  
+  .contact-details button:hover {
+    background-color: rgb(169, 190, 46);
+  }
+  
+  @keyframes pulse {
+    0% {background: rgb(102, 129, 170);}
+    50% {background-color: rgb(18, 73, 16);}
+    100% {background: rgb(102, 129, 170);}
+  }
 
 
     /* [7] Footer */
