@@ -495,7 +495,7 @@ nav a {
         flex-direction: column;
         align-items: center;
   
-        background-color: rgb(47, 47, 85);
+        background-color: rgb(255, 255, 255);
         margin: 20px;
         padding: 3rem;
         border-radius: 10px;
@@ -503,19 +503,19 @@ nav a {
     
       .contact-details h2,  .contact-details p {
         text-align: center;
-        color: white;
+        color: rgb(0, 0, 0);
       }
     
       .contact-details h2 {
         margin: 0;
         font-size: 4rem;
-        font-family: 'Endgraph-Medium';
+        font-family: 'OverusedG-Bold';
       }
       
       .contact-details p {
         font-size: 1.5rem;
         max-width: 500px;
-        font-family: 'Endgraph-Light';
+        font-family: 'NeueM-Med';
       }
     
       .contact-details button {
@@ -524,7 +524,8 @@ nav a {
         width: 350px;
         height: 100px;
         border-radius: 40px;
-        font-family: 'TTRunsBI';
+        font-family: 'NeueM-Med';
+        background-color: rgba(201, 201, 201, 0.377);
       }
 
 
@@ -774,62 +775,63 @@ nav a {
         text-align: right;
     }
 
-    /* [7] Contact Section  */
+
     /* [8] Contact Section */
-.contact-container {
-    margin-top: 25%;
-  }
-  
-  .contact-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-    background-color: rgb(47, 47, 85);
-    margin: 40px;
-    padding: 7rem;
-    border-radius: 10px;
-  } 
-  
-  .contact-details h2, .contact-details p {
-    text-align: center;
-    color: white;
-  }
-  
-  .contact-details h2 {
-    margin: 0;
-    font-size: 5rem;
-    font-family: 'Endgraph-Medium';
-  }
-  
-  .contact-details p {
-    font-size: 1.5rem;
-    max-width: 700px;
-    font-family: 'Endgraph-Light';
-  }
-  
-  .contact-details button {
-    border: none;
-    padding: 20px;
-    width: 450px;
-    height: 120px;
-    border-radius: 40px;
-    font-family: 'TTRunsBI';
-    color: rgb(255, 189, 9);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    animation: pulse 3s infinite alternate ease-in-out;
+    .contact-container {
+        margin-top: 25%;
+    }
     
-  }
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        background-color: rgb(255, 255, 255);
+        margin: 40px;
+        padding: 7rem;
+        border-radius: 10px;
+    } 
+    
+    .contact-details h2, .contact-details p {
+        text-align: center;
+        color: rgb(0, 0, 0);
+    }
+    
+    .contact-details h2 {
+        margin: 0;
+        font-size: 5rem;
+        font-family: 'OverusedG-Bold';
+    }
+    
+    .contact-details p {
+        font-size: 1.5rem;
+        max-width: 700px;
+        font-family: 'NeueM-Med';
+    }
+    
+    .contact-details button {
+        border: none;
+        padding: 20px;
+        width: 450px;
+        height: 120px;
+        border-radius: 40px;
+        font-size: 1.2rem;
+        font-family: 'NeueM-Med';
+        color: rgb(0, 0, 0);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        animation: pulse 3s infinite alternate ease-in-out;
+        
+    }
   
-  .contact-details button:hover {
-    background-color: rgb(169, 190, 46);
-  }
-  
-  @keyframes pulse {
-    0% {background: rgb(102, 129, 170);}
-    50% {background-color: rgb(18, 73, 16);}
-    100% {background: rgb(102, 129, 170);}
-  }
+    .contact-details button:hover {
+        background-color: rgb(169, 190, 46);
+    }
+    
+    @keyframes pulse {
+        0% {background-color: rgba(201, 201, 201, 0.377);}
+        50% {background-color: rgb(151, 148, 148);}
+        100% {background-color: rgba(201, 201, 201, 0.377);}
+    }
 
 
     /* [7] Footer */
