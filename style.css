@@ -188,21 +188,16 @@ nav a {
     flex-direction: column;
 }
 
-.section-para-intro {
-    line-height: 20px;
-    text-align: center;
-    font-family: 'CSGilbert-Mono';
-    font-size: 20px;
-}
-
 .section-title-intro {
-    font-family: 'Georgia-Black';
+    font-family: 'NeueM-Med';
     letter-spacing: 1px;
 }
 
 .section-headline-intro {
-    font-family: 'Georgia-ExtraL';
+    font-family: 'NeueM-Thin';
     letter-spacing: 1px;
+    margin: 0 auto;
+    max-width: 250px;
     margin-top: -2%;
 }
 
@@ -316,56 +311,13 @@ footer {
     letter-spacing: 2px;
 }
 
-
-
-
-/* [5] Project Section */
-/* <--------------  Projects Styling for 30em & 10em -----------------> */
-@media (min-width: 30em) {
-    .Project-Section {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
-        gap: 15px;
-        padding: 15px;
-    }
-
-    .title-project {
-        text-align: center;
-        color: white;
-        font-size: 2rem;
-        padding-top: 20%;
-        
-   }
-
-   .project-card {
-        background-color: #f9f9f9;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        padding: 16px;
-        text-align: center;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .project-button {
-        padding: 10px 20px;
-        background-color: #000000;
-        color: white;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 16px;
-        width: 100%;
-        transition: 0.4s;
-        font-family: 'NeueM-Med';
-    }
-
-    .project-button:hover {
-        background-color: #3a3a3a;
-        
-    }
-}
-
 @media (min-width: 10em) {
+
+    .Projects {
+        padding-top: 60%;
+    }
+
+
     .Project-Section {
         display: grid;
         grid-template-columns: 1;
@@ -377,7 +329,6 @@ footer {
         text-align: center;
         color: white;
         font-size: 1.6rem;
-        padding-top: 20%;
         font-family: 'NeueM-Bold';
         text-transform: uppercase;
    }
@@ -430,13 +381,62 @@ footer {
         
     }
 }
-/* <-------------- Projects End Styling for 30em & 10em -----------------> */
 
-@media (min-width: 75em) {
-    .About {
-        max-width: 90rem;
+
+/* [5] Project Section */
+/* <--------------  Projects Styling for 30em & 10em -----------------> */
+@media (min-width: 30em) {
+
+    .Intro {
+        padding-top: 20%;
+    }
+
+    .Projects {
+        padding-top: 40%;
+    }
+
+    .Project-Section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .title-project {
+        text-align: center;
+        color: white;
+        font-size: 2rem;
+   }
+
+   .project-card {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 16px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-button {
+        padding: 10px 20px;
+        background-color: #000000;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+        transition: 0.4s;
+        font-family: 'NeueM-Med';
+    }
+
+    .project-button:hover {
+        background-color: #3a3a3a;
+        
     }
 }
+/* <-------------- Projects End Styling for 30em & 10em -----------------> */
+
 
 
 @media (min-width: 55em) { /* ⇣⇣ DESKTOP SETTINGS ⇣⇣ */
@@ -499,6 +499,7 @@ footer {
         flex-direction: row;
         justify-content: center;
         gap: 3%;
+        padding-top: 10%;
     }
     
     .section-title-intro {
@@ -507,7 +508,8 @@ footer {
     
     .section-headline-intro {
         font-size: 2rem;
-        margin-top: -2%;
+        margin-top: -5%;
+        max-width: 500px;
     }
 
     .section-intro-picture {
@@ -545,8 +547,9 @@ footer {
 
 
    /* [5] Project Section */
+
     .Projects {
-        margin-top: 20%;
+        margin-top: 15%;
     }
 
    .title-project {
@@ -557,7 +560,7 @@ footer {
    
    .Project-Section {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 30px;
         padding: 20px;
         justify-items: center;
@@ -583,7 +586,6 @@ footer {
         font-size: 20px;
         color: #333;
         margin-bottom: 16px;
-        font-family: 'CSGilbert-Mono';
     }
 
     .project-button {
@@ -596,7 +598,7 @@ footer {
         font-size: 16px;
         width: 100%;
         transition: 0.4s;
-        font-family: 'CSGilbert-Mono';
+        
     }
 
     .project-button:hover {
@@ -634,3 +636,16 @@ footer {
     }
 }
 
+@media (min-width: 75em) {
+    .About {
+        max-width: 90rem;
+    }
+
+    .Project-Section {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        padding: 20px;
+        justify-items: center;
+    }
+}
