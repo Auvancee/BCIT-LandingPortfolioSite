@@ -1,28 +1,37 @@
 /* [0] Font Face & Initialization */
 @font-face {
-    font-family: 'Coolvetica-RG';
-    src: url(/0-fonts/0\ -\ coolvetica\ rg.otf);
+    font-family: 'OverusedG-Black';
+    src: url(/0-fonts/OverusedGrotesk-Black-D-6rPXb9.otf);
 }
 
 @font-face {
-    font-family: 'CSGilbert-Mono';
-    src: url(/0-fonts/1\ -\ CSGilbertMono.otf);
+    font-family: 'OverusedG-Bold';
+    src: url(/0-fonts/OverusedGrotesk-Bold-CZezP8u6.otf);
 }
 
 @font-face {
-    font-family: 'Georgia-ExtraL';
-    src: url(/0-fonts/2\ -\ Georgia-ExtraLight.ttf);
+    font-family: 'OverusedG-Med';
+    src: url(/0-fonts/OverusedGrotesk-Medium-BVdrEQso.otf);
 }
 
 @font-face {
-    font-family: 'Georgia-Black';
-    src: url(/0-fonts/2\ -\ Georgia-Black.ttf);
+    font-family: 'NeueM-Bold';
+    src: url(/0-fonts/PPNeueMontreal-Bold-eYoqcLYb.otf);
+}
+
+@font-face {
+    font-family: 'NeueM-Med';
+    src: url(/0-fonts/PPNeueMontreal-Medium-Bc1YMBzw.otf);
+}
+
+@font-face {
+    font-family: 'NeueM-Thin';
+    src: url(/0-fonts/PPNeueMontreal-Thin-XYPwWDmP.otf);
 }
 
 
 body {
     background-color: rgb(0, 0, 0);
-    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -45,13 +54,14 @@ nav {
     justify-content: space-between;
     padding: 0.5rem;
 
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
     margin: 20px;
     border-radius: 70px;
 
-    font-family: 'Georgia-ExtraL';
+    font-family: 'NeueM-Thin';
     font-size: 20px;
     text-decoration: none;
+    align-items: center;
 }
 
 
@@ -66,13 +76,9 @@ nav ul {
 }
 
 nav a {
-    color: black;   
+    color: rgb(255, 255, 255);   
     text-decoration: none;
     letter-spacing: 0.1px;
-}
-
-.logo {
-    transform: translateY(19px);
 }
 
 /* [2] Hamburger Menu */
@@ -101,7 +107,7 @@ nav a {
 .line {
     fill:none;
     transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-    stroke:#000000;
+    stroke:#ffffff;
     stroke-width: 3px;
     stroke-linecap:round;
 }
@@ -155,8 +161,12 @@ nav a {
     margin: 0 auto;
     list-style: none;
     padding: 20px;
-    font-family: 'Georgia-Black';
+    font-family: 'NeueM-Med';   
     font-size: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
 }
 
 .overlay-content a { 
@@ -169,22 +179,7 @@ nav a {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 10%;
-}
-
-.section-intro-picture {
-    height: auto;
-    width: auto;
-    /*
-    width: 280px;
-    height: 280px;
-    */
-}
-
-.section-intro-picture img {
-    border-radius: 50%;
-    scale: 0.7;
-    /* margin-top: 0%; */
+    padding-top: 35%;
 }
 
 .section-intro-information {
@@ -214,6 +209,7 @@ nav a {
 .section-title-intro, .section-para-intro,
 .section-headline-intro {
     color: white;
+    text-align: center
 }
 
 
@@ -222,47 +218,50 @@ nav a {
 } */
 
 
+
+
 /* [4] About Section */
 .About {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 20%;
+    padding-top: 40%;
     max-width: 30rem;
     margin: 0 auto;
 }
 
-.about-container {
-    max-width: 1000px;
-}
-
 .about-image img {
-    width: 100%;
+    width: 80%;
+    max-width: 350px ;
     border-radius: 20px;
+    object-fit: cover;  
+    display: block;
+    margin: 0 auto
 }
 
 .title-about {
     color: white;
     padding-top: 0%;
-    font-family: 'Georgia-Black';
-    font-size: 1.5rem;
-    
-    
+    font-family: 'NeueM-Bold';
+    text-transform: uppercase;
+    font-size: 1.6rem;   
 }
 
 .about-content {
     color: white;
+    max-width: 17.5rem;
+    margin: 0 auto;
 }
 
 .about-p {
     text-align: center;
-     font-size: 16px;
-     font-family: 'CSGilbert-Mono';
-     max-width: 70rem;
+     font-size: 1.3rem;
+     font-family: 'NeueM-Thin';
 }
 
 /* [6] Contact Section  */
 .Contact-Details {
+    padding-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -274,6 +273,7 @@ nav a {
     color: white;
     font-size: 20px;
     font-family: 'Georgia-ExtraL';
+    margin: 0;
 }
 
 .contact-title {
@@ -317,6 +317,8 @@ footer {
 }
 
 
+
+
 /* [5] Project Section */
 /* <--------------  Projects Styling for 30em & 10em -----------------> */
 @media (min-width: 30em) {
@@ -332,7 +334,7 @@ footer {
         color: white;
         font-size: 2rem;
         padding-top: 20%;
-        font-family: 'Georgia-Black';
+        
    }
 
    .project-card {
@@ -354,7 +356,7 @@ footer {
         font-size: 16px;
         width: 100%;
         transition: 0.4s;
-        font-family: 'CSGilbert-Mono';
+        font-family: 'NeueM-Med';
     }
 
     .project-button:hover {
@@ -374,27 +376,30 @@ footer {
     .title-project {
         text-align: center;
         color: white;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         padding-top: 20%;
-        font-family: 'Georgia-Black';
+        font-family: 'NeueM-Bold';
+        text-transform: uppercase;
    }
 
    .sub-proj {
-        font-family: 'Georgia-Black';
+        font-family: 'NeueM-Med';
+        text-transform: uppercase;  
         font-size: 20px;
-        letter-spacing: 1px ;
+        padding-top: 1rem;
+        padding-bottom: 0.4rem;
+        margin: 0;
+
     }
 
 
    .project-text {
-        font-size: 16px;
+        font-size: 1.2rem;
+        margin: 0;
         color: #333;
-        font-family: 'CSGilbert-Mono';
+        font-family: 'NeueM-Thin';
+        padding-bottom: 1rem;
     }
-
-
-
-
 
    .project-card {
         background-color: #f9f9f9;
@@ -416,7 +421,8 @@ footer {
         width: 100%;
         transition: 0.4s;
         border-radius: 50px;
-        font-family: 'CSGilbert-Mono';
+        font-family: 'NeueM-Med';
+        text-transform:uppercase;
     }
 
     .project-button:hover {
@@ -458,7 +464,7 @@ footer {
     }
 
     nav a {
-        color: black;   
+        color: rgb(255, 255, 255);   
         text-decoration: none; 
         transition: 0.4s;
     }
